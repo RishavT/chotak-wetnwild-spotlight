@@ -5,7 +5,7 @@ content = ""
 
 def set_thumbnail(image_path):
     thumb_path = f"{image_path}.thumb.jpg"
-    result = os.system(f"convert {image_path} -thumbnail 300x300 {thumb_path}")
+    result = os.system(f"convert {image_path} -thumbnail 300x300 {thumg_path}")
     if result != 0:
         raise Exception(f"failed to convert image {image_path}")
     return thumb_path
