@@ -7,7 +7,7 @@ for folder in os.listdir(root_folder):
     folder_path = os.path.join(root_folder, folder)
 
     parent_start = f"""
-    <div style="display: none" id="{folder}-spotlight" class="spotlight-group" data-fit="cover" data-autohide="all" data-animation="fade" data-control="close">
+    <div style="display: none" id="{folder}-spotlight" class="spotlight-group" data-fit="contain" data-autohide="all" data-animation="fade" data-control="close">
 """
     parent_end = """
     </div>
